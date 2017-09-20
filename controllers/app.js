@@ -1,0 +1,1 @@
+var app =  angular.module('pungi',['ui.bootstrap','slidesDirective']);

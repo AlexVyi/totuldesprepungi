@@ -1,0 +1,36 @@
+body {
+  background-image: url("../img/textured-polietilena.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+h1 {
+  font-family: Fira Sans, sans-serif;
+  color: #2760aa; }
+
+h4 {
+  font-family: Fira Sans, sans-serif;
+  color: #4a4a4a;
+  letter-spacing: 1.5px;
+  font-style: oblique; }
+
+small {
+  font-family: Fira Sans, sans-serif;
+  display: inline-block;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color: #4a4a4a;
+  font-style: italic;
+  font-size: 50% !important;
+  letter-spacing: 2px;
+  padding: 2px 2px 1px;
+  line-height: 0.9;
+  vertical-align: top;
+  text-shadow: 0 1px 0 #fff;
+  background: #f2f2f2;
+  border: 1px solid #eaeaea;
+  cursor: default; }
+
+/*# sourceMappingURL=styles.css.map */
