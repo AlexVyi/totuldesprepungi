@@ -11,6 +11,39 @@ h4
   letter-spacing: 1.5px
   font-style: oblique
 
+nav
+  display: block
+  max-width: 15%
+  float: left!important
+  margin: 0
+  padding: 0
+  position: absolute
+  & > .btn
+    display: block
+    float: left!important
+    line-height: 15px
+    width: 240px
+    font-family: $main-font
+    white-space: normal
+
+.btn:hover
+  color: $nice-green
+  border: none
+
+input[type=checkbox]
+  display: none
+
+input[type=checkbox]:checked ~ #menu
+  display: block
+
+.show-menu
+  display: block
+  float: left!important
+  line-height: 15px
+  width: 240px
+  font-family: $main-font
+  white-space: normal
+
 small
   font-family: $main-font
   display: inline-block
@@ -29,3 +62,15 @@ small
   background: #f2f2f2
   border: 1px solid #eaeaea
   cursor: default
+
+@media screen and (max-width : 768px)
+  nav
+    position: static
+    display: none
+
+  .btn
+    margin-bottom: 1px
+    width: 100%
+
+  .show-menu
+    display: block
