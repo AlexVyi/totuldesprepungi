@@ -7,7 +7,8 @@ body {
 
 h1 {
   font-family: Fira Sans, sans-serif;
-  color: #2760aa; }
+  color: #2760aa;
+  text-align: center; }
 
 h4 {
   font-family: Fira Sans, sans-serif;
@@ -17,20 +18,21 @@ h4 {
 
 nav {
   display: block;
-  max-width: 15%;
-  float: left !important;
   margin: 0;
   padding: 0;
   position: absolute; }
-  nav > .btn {
+  nav > .btn-default {
     display: block;
-    float: left !important;
     line-height: 15px;
     width: 240px;
+    height: 44px;
     font-family: Fira Sans, sans-serif;
-    white-space: normal; }
+    font-style: italic;
+    white-space: normal;
+    color: #2760aa;
+    background-color: transparent; }
 
-.btn:hover {
+.btn-default:hover {
   color: #19c589;
   border: none; }
 
@@ -41,12 +43,7 @@ input[type=checkbox]:checked ~ #menu {
   display: block; }
 
 .show-menu {
-  display: block;
-  float: left !important;
-  line-height: 15px;
-  width: 240px;
-  font-family: Fira Sans, sans-serif;
-  white-space: normal; }
+  display: none; }
 
 small {
   font-family: Fira Sans, sans-serif;
@@ -66,16 +63,23 @@ small {
   border: 1px solid #eaeaea;
   cursor: default; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   nav {
-    position: static;
+    margin-top: 50px;
     display: none; }
 
-  .btn {
+  nav .btn-default {
     margin-bottom: 1px;
-    width: 100%; }
+    width: 95%; }
+
+  .btn-default:hover {
+    color: #19c589; }
 
   .show-menu {
-    display: block; } }
+    display: inline-block;
+    line-height: 15px;
+    width: 240px;
+    font-family: Fira Sans, sans-serif;
+    white-space: normal; } }
 
 /*# sourceMappingURL=styles.css.map */
