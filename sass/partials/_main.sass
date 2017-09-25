@@ -1,22 +1,30 @@
+html body
+  height: 100%
+
 body
   @include background-image(url("../img/textured-polietilena.jpg"))
 
+#mainContainerFluid
+  padding-top: 50px!important
+  padding-left: 50px!important
+
 h1
   font-family: $main-font
-  color: $blue
+  color: lightcoral
   text-align: center
 
 h4
   font-family: $main-font
   color: $charcoal-grey
   letter-spacing: 1.5px
-  font-style: oblique
+  font-style: italic
 
 nav
   display: block
-  margin: 0
-  padding: 0
+  width: 240px
   position: absolute
+  margin-top: 15px
+  margin-left: 20px
   & > .btn-default
     display: block
     line-height: 15px
@@ -26,7 +34,9 @@ nav
     font-style: italic
     white-space: normal
     color: $blue
-    background-color: transparent
+    background-color: lightgray
+
+
 
 .btn-default:hover
   color: $nice-green
@@ -49,7 +59,7 @@ small
   -moz-border-radius: 3px
   -webkit-border-radius: 3px
   border-radius: 3px
-  color: $charcoal-grey
+  color: $blue!important
   font-style: italic
   font-size: 50% !important
   letter-spacing: 2px
@@ -62,22 +72,47 @@ small
   border: 1px solid #eaeaea
   cursor: default
 
+footer
+  margin-top: 27%
+  padding-left: 50px
+  font-family: $main-font
+
 @media screen and (max-width : 1024px)
 
   nav
-    margin-top: 50px
+    margin-top: 35px
+    margin-left: 0
     display: none
+    width: 100%
 
   nav .btn-default
-    margin-bottom: 1px
-    width: 95%
+    width: 100%
+    padding-right: 18px
+  a
+    width: 100%
+    padding-right: 18px
 
   .btn-default:hover
     color: $nice-green
 
   .show-menu
+    position: fixed
     display: inline-block
     line-height: 15px
-    width: 240px
+    width: 100%
     font-family: $main-font
     white-space: normal
+
+  label
+    width: 100%
+    margin-top: 5px
+    position: fixed
+
+  #mainContainerFluid
+    padding-top: 15px!important
+    padding-left: 15px!important
+
+  footer
+    padding-left: 0
+
+
