@@ -1,5 +1,4 @@
 body {
-  margin-top: 45px;
   background-image: url("../img/textured-polietilena.jpg");
   background-repeat: repeat;
   background-attachment: fixed;
@@ -7,17 +6,15 @@ body {
   background-size: cover; }
 
 .row {
-  margin-bottom: 4%;
   font-family: Fira Sans, sans-serif;
   font-style: normal;
   letter-spacing: 2px; }
   .row a {
     color: #4a4a4a;
-    font-weight: 700;
-    font-size: 15px;
-    margin-bottom: 25px; }
+    font-weight: 800;
+    font-size: 15px; }
 
-.row a:hover {
+.row img:hover {
   font-size: 30px;
   cursor: hand; }
 
