@@ -67,4 +67,23 @@ var app =  angular.module('slidesDirective',['ngRoute'])
 				templateUrl: 'slides/irelandbagtax.html'
 
 			})
+            .when('/bans', {
+                templateUrl: 'slides/bansdontwork.html'
+
+            })
+            .when('/strategies', {
+                templateUrl: 'slides/reductionstrategies.html'
+
+            })
+            .when('/wastediversion', {
+                templateUrl: 'slides/wastediversion.html'
+
+            })
+            .when('/studies', {
+                templateUrl: 'slides/studiesandstatistics.html'
+
+            })
+
+
+
 	}]);
