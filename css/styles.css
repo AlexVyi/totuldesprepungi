@@ -5,6 +5,38 @@ body {
   background-position: center center;
   background-size: cover; }
 
+#fancy {
+  display: inline-block;
+  position: relative;
+  min-width: 180px;
+  padding: 15px;
+  text-align: center;
+  color: white !important;
+  cursor: pointer;
+  -webkit-perspective: 100px;
+  perspective: 100px;
+  background-color: transparent; }
+
+#fancy:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+  outline: 1px solid transparent;
+  background-color: #ffa300;
+  -webkit-transform: rotateY(-6deg) rotateX(-5deg) translateX(-4%);
+  transform: rotateY(-6deg) rotateX(-5deg) translateX(-4%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out; }
+
+#fancy:hover:after {
+  -webkit-transform: rotateY(6deg) rotateX(-5deg) translateX(4%);
+  transform: rotateY(6deg) rotateX(-5deg) translateX(4%); }
+
 .row {
   font-family: Fira Sans, sans-serif;
   line-height: 20px;
@@ -22,7 +54,7 @@ body {
 #mainContainerFluid {
   padding-top: 100px !important;
   padding-left: 50px !important;
-  padding-bottom: 150px;
+  padding-bottom: 202px;
   background-color: #0f0f0f;
   overflow: hidden; }
 
@@ -186,5 +218,12 @@ b {
   border-radius: 15px;
   font-family: Fira Sans, sans-serif;
   color: lightcoral; }
+
+.btn-success {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-family: Fira Sans, sans-serif;
+  width: 175px;
+  border-radius: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
