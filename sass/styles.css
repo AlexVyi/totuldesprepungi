@@ -215,6 +215,12 @@ footer {
 p, h4 {
   font-size: 18px;
   font-weight: 500;
+  color: black;
+  line-height: 25px; }
+
+li {
+  font-size: 18px;
+  font-weight: 500;
   text-align: left;
   color: black;
   line-height: 25px; }
