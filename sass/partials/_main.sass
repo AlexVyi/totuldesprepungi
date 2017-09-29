@@ -11,7 +11,7 @@ body
   cursor: pointer
   -webkit-perspective: 100px
   perspective: 100px
-  background-color: transparent
+  background-color: transparent!important
 
 
 #fancy:after
@@ -34,6 +34,15 @@ body
   -webkit-transform: rotateY(6deg) rotateX(-5deg) translateX(4%)
   transform: rotateY(6deg) rotateX(-5deg) translateX(4%)
 
+#studii
+  background-color: red
+
+#devierea
+  background-color: red
+
+#strategii
+  background-color: red
+
 
 .row
   font-family: $main-font
@@ -45,9 +54,6 @@ body
     font-weight: 800
     font-size: 15px
 
-.row img:hover
-  font-size: 30px
-  cursor: hand
 
 #mainContainerFluid
   padding-top: 100px!important
@@ -58,7 +64,7 @@ body
 
 h1
   font-family: $main-font
-  color: lightcoral
+  color: red
   text-align: center
   padding-top: 10px
 
@@ -87,7 +93,7 @@ h5
     height: 44px
     font-family: $main-font
     white-space: normal
-    color: lightcoral
+    color: red
     background-color: white
     border-color: black
     border-radius: 10px
@@ -99,6 +105,7 @@ h5
   margin-left: 25vw
   & .btn-danger
     display: inline-block
+    font-family: $main-font
     line-height: 15px
     width: 240px
     height: 44px
@@ -112,7 +119,7 @@ h5
 
 .btn-danger:hover
   color: $nice-green
-  background-color: #0f0f0f
+  background-color: #0f0f0f!important
   border: none
 
 input[type=checkbox]
@@ -179,6 +186,10 @@ footer
   #menuRight .btn-danger
     width: 100%
     padding-right: 18px
+
+  #fancy
+    width: 80%!important
+    border: hidden
   a
     width: 100%
     padding-right: 18px

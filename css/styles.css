@@ -15,7 +15,7 @@ body {
   cursor: pointer;
   -webkit-perspective: 100px;
   perspective: 100px;
-  background-color: transparent; }
+  background-color: transparent !important; }
 
 #fancy:after {
   content: "";
@@ -37,6 +37,15 @@ body {
   -webkit-transform: rotateY(6deg) rotateX(-5deg) translateX(4%);
   transform: rotateY(6deg) rotateX(-5deg) translateX(4%); }
 
+#studii {
+  background-color: red; }
+
+#devierea {
+  background-color: red; }
+
+#strategii {
+  background-color: red; }
+
 .row {
   font-family: Fira Sans, sans-serif;
   line-height: 20px;
@@ -47,10 +56,6 @@ body {
     font-weight: 800;
     font-size: 15px; }
 
-.row img:hover {
-  font-size: 30px;
-  cursor: hand; }
-
 #mainContainerFluid {
   padding-top: 100px !important;
   padding-left: 50px !important;
@@ -60,7 +65,7 @@ body {
 
 h1 {
   font-family: Fira Sans, sans-serif;
-  color: lightcoral;
+  color: red;
   text-align: center;
   padding-top: 10px; }
 
@@ -89,7 +94,7 @@ h5 {
     height: 44px;
     font-family: Fira Sans, sans-serif;
     white-space: normal;
-    color: lightcoral;
+    color: red;
     background-color: white;
     border-color: black;
     border-radius: 10px; }
@@ -101,6 +106,7 @@ h5 {
   margin-left: 25vw; }
   #menuRight .btn-danger {
     display: inline-block;
+    font-family: Fira Sans, sans-serif;
     line-height: 15px;
     width: 240px;
     height: 44px;
@@ -114,7 +120,7 @@ h5 {
 
 .btn-danger:hover {
   color: #19c589;
-  background-color: #0f0f0f;
+  background-color: #0f0f0f !important;
   border: none; }
 
 input[type=checkbox] {
@@ -176,6 +182,10 @@ footer {
     width: 100%;
     padding-right: 18px; }
 
+  #fancy {
+    width: 80% !important;
+    border: hidden; }
+
   a {
     width: 100%;
     padding-right: 18px; }
@@ -202,6 +212,13 @@ footer {
 
   footer {
     padding-left: 0; } }
+p, h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: black;
+  line-height: 25px; }
+
 p {
   font-size: 18px;
   font-weight: 500;
@@ -212,12 +229,12 @@ h2 {
   color: #19c589; }
 
 b {
-  color: lightcoral; }
+  color: red; }
 
 #button {
   border-radius: 15px;
   font-family: Fira Sans, sans-serif;
-  color: lightcoral; }
+  color: red; }
 
 .btn-success {
   margin-top: 25px;
